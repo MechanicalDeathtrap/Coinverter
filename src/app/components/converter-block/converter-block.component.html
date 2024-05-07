@@ -1,0 +1,54 @@
+<div class="main-container">
+  <div class="converter-container">
+    <div class="title-container">
+      <h1 class="converter-title">Coinverter</h1>
+    </div>
+    <div class="converter-container__main-input-converter">
+      <div class="main-input-converter__icons">
+        <img src="assets/images/flagRu.svg" alt="russian-flag-icon" class="flag-icon">
+        <img src="assets/images/ruble-svgrepo-com.svg" alt="russian-currency-icon" class="currency-icon">
+      </div>
+      <div class="main-input-converter__input">
+        <input type="text" class="main-input" placeholder="Введите сумму..."
+               [ngModel]="mainInput.value" (ngModelChange)="calculateCurrencyValues(parseInt(mainInput.value))" #mainInput>
+      </div>
+    </div>
+    <ul class="currency-list">
+      <li class="currency-list__item">
+        <div class="item__icons">
+          <img src="assets/images/flag-us-svgrepo-com.svg" alt="usa-flag-icon" class="flag-icon">
+          <img src="assets/images/dollar-svgrepo-com.svg" alt="dollar-icon" class="currency-icon">
+        </div>
+        <span class="item__currency-value">{{calculatedCurrencies[0] }}</span>
+      </li>
+      <li class="currency-list__item">
+        <div class="item__icons">
+          <img src="assets/images/flag-eu-svgrepo-com.svg" alt="europe-flag-icon" class="flag-icon">
+          <img src="assets/images/euro-svgrepo-com.svg" alt="euro-icon" class="currency-icon">
+        </div>
+        <span class="item__currency-value">{{calculatedCurrencies[1]}}</span>
+      </li>
+      <li class="currency-list__item">
+        <div class="item__icons">
+          <img src="assets/images/flag-for-flag-united-kingdom-svgrepo-com.svg" alt="uk-flag-icon" class="flag-icon">
+          <img src="assets/images/pound-svgrepo-com.svg" alt="pounds-icon" class="currency-icon">
+        </div>
+        <span class="item__currency-value">{{calculatedCurrencies[2]}}</span>
+      </li>
+      <li class="currency-list__item">
+        <div class="item__icons">
+          <img src="assets/images/japan-flag.svg" alt="japan-flag-icon" class="flag-icon">
+          <img src="assets/images/yen-svgrepo-com.svg" alt="yen-icon" class="currency-icon">
+        </div>
+        <span class="item__currency-value">{{calculatedCurrencies[3] }}</span>
+      </li>
+      <li class="currency-list__item">
+        <div class="item__icons">
+          <img src="assets/images/flag-for-flag-china-svgrepo-com.svg" alt="chinese-flag-icon" class="flag-icon">
+          <img src="assets/images/yen-svgrepo-com.svg" alt="yuan-icon" class="currency-icon">
+        </div>
+        <span class="item__currency-value">{{calculatedCurrencies[4] }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

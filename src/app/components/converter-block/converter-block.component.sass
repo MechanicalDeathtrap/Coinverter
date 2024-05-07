@@ -1,0 +1,94 @@
+.converter-icon
+  width: 18px
+
+.flag-icon
+  width: 31px
+
+.currency-icon
+  width: 15px
+
+.converter-container
+  display: flex
+  flex-direction: column
+  gap: 15px
+  background: white
+  border-radius: 10px
+  width: 30%
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px
+
+  &__main-input-converter
+    display: flex
+    align-items: center
+    border-bottom: 1px solid rgb(grey, 0.3)
+    padding: 0 20px 15px 20px
+    justify-content: space-between
+
+.main-input-converter__input
+  width: 70%
+
+.main-input-converter__icons
+  display: flex
+  align-items: center
+
+.main-input:focus
+  outline: none
+
+.main-input
+  outline: none
+  color: black
+  width: 95%
+  font-size: 30px
+  font-weight: 300
+  border: none
+
+.main-container
+  background: lightgrey
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+
+.converter-title
+  font-weight: 300
+  margin: 0
+
+.escape-button
+  border: none
+  background: transparent
+  display: flex
+  align-items: center
+
+.title-container
+  display: flex
+  justify-content: center
+  gap: 40px
+  background: rgb(lightgrey, 0.1)
+  border-bottom: 1px solid rgb(grey, 0.3)
+
+.title-container, .currency-list
+  padding: 10px 20px
+
+.currency-list
+  list-style-type: none
+  display: flex
+  flex-direction: column
+  margin: 0
+
+  &__item
+    border-bottom: 1px solid rgb(grey, 0.3)
+    display: flex
+    justify-content: space-between
+    padding: 10px 0
+
+.item
+  &__icons
+    display: flex
+    align-items: center
+    gap: 5px
+
+  &__currency-value
+    font-size: 20px
+    font-weight: 400
+
+.bitcoin-currency-value
+  text-transform: uppercase
